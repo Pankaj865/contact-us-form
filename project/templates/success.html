@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Done</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<style>
+    body{
+        background-color: rgb(180, 226, 211);
+    }
+    .bxmodel{
+    border: 3px solid black;
+     justify-items: center;
+     width: 420px;
+     margin: 10% auto;
+     height: 355px;
+     background-color: white;
+ }
+ .bxmodel p{
+     text-align: center;
+     color: rgb(25,125,0,1);
+     font-size: xx-large;
+     margin-top: 30px;
+ }
+ .bxmodel button{
+     border-radius: 5px;
+     margin-left: 37%;
+     margin-top: 50px;
+     background-color: orange;
+     padding: 10px 35px 10px 35px;
+ }
+ .bxmodel button a{
+     font-size: 20px;
+     text-decoration: none;
+     color: white;
+     font-weight: bold;
+ 
+ }
+</style>
+<body>
+    <div class="bxmodel">
+        <p>We received your <br> message. Our team will <br> contact you shortly <br> with the solution to <br> your query.</p>
+        <button> <a href="{% url 'index' %}"> okay</a></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background: linear-gradient(to right, rgb(206, 82, 11), rgb(39, 22, 1));
+    color: rgb(11, 10, 10);
+    border: 3px solid rgb(0, 0, 0);
+    margin: 5px;
+}
+
+.log {
+    width: 50%;
+    margin: 15px;
+}
+
+.log h2 {
+
+    color: white;
+
+}
+
+.round {
+    width: 50%;
+    margin: 15px;
+}
+
+.round h2 {
+    text-align: right;
+    color: white;
+    
+}
+
+.fom {
+    margin: 5px;
+    margin-top: 30px;
+    background: linear-gradient(to right, rgb(206, 82, 11), rgb(39, 22, 1), rgb(206, 82, 11));
+}
+
+.fom h4 {
+    text-align: center;
+    background-color: white;
+    width: 20%;
+    margin-left: 40%;
+    font-size: 20px;
+
+}
+.container {
+    border-top-right-radius: 2px;
+    border: 2px solid black;
+    width: 600px;
+    background-color: rgba(181, 214, 174, 0.71);
+    margin: 0 auto;
+    height: auto;
+    margin-top: 70px;
+}
+
+.container form {
+    margin: 35px 30px;
+}
+
+form {
+    padding-top: 20px;
+}
+
+form .dbl-field {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.dbl-field .field {
+    height: 50px;
+    width: calc(100% / 2 - 13px);
+}
+
+form .field input,
+form .message textarea {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 15px;
+    font-size: 16px;
+
+}
+form .field input::placeholder
+form .message textarea ::placeholder{
+    color: #bfbfbf;
+}
+form .button{
+    margin: 45px 195px;
+}
+.button button{
+    font-size: 20px;
+    background:rgb(239, 123, 57) ;
+    padding: 10px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+.footer {
+    margin-top: 80px;
+    background: linear-gradient(to right, rgb(206, 82, 11), rgb(39, 22, 1));
+    height: auto;
+}
+
+.footer,
+h3,
+h5 {
+    color: white;
+    text-align: center;
+}
+
+.footer h5 {
+    font-size: larger;
+}
+
+.footer h5 {
+    margin-top: 50px;
+    letter-spacing: 5px;
+}
+.footer h3{
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 600px) {
+    .container {
+        text-align: center;
+        height: auto;
+        width: 100%;
+    }
+
+    form .dbl-field {
+        flex-direction: column;
+    }
+
+    .dbl-field .field {
+        width: 100%;
+    }
+
+    form .button {
+        flex-direction: column;
+    }
+
+    form .message textarea {
+        width: 100%;
+
+    }
+
+    .footer {
+        height: auto;
+        width: 100%;
+    }
+}

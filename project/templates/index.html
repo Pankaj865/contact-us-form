@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    
+        <div class="navbar">
+            <div class="log">
+                <h2> Logo</h2>
+            </div>
+            <div class="round">
+                <h2>
+                    Round One:Practical
+                </h2>
+            </div>
+        </div>
+        <div class="fom">
+            <h4>Contact Us Form</h4>
+        </div>
+        <div class="container">
+        <form  class="" method="POST">
+            {% csrf_token %}
+            <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="fname" id="" placeholder="Firstname" required>
+                </div>
+
+                <div class="field">
+                    <input name="lname" id="" placeholder="Lastname" required>
+                </div>
+                </div>
+                <div class="dbl-field">
+                <div class="field">
+                    <input type="text" name="phone" id="" placeholder="Phone Number" required>
+                </div>
+                <div class="field">
+                    <input type="email" name="email" id="" placeholder="Email" required>
+                </div>
+                </div>
+                <div class="message">
+                    <textarea name="message"  id="" placeholder="About Yourself" style="height: 200px;"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit">Submit</button>
+                </div>
+        </form>
+        </div>
+
+        <div class="footer">
+            <h3>Assignment</h3>
+            <h5>This is your round one for evaluating your skills</h5>
+        </div>
+</body>
+
+</html>
